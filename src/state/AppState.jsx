@@ -12,6 +12,7 @@ export const AppState = ({children}) => {
 
   const [state, dispatch] = useReducer(reducer, initialState);
 
+  // Initial price saved as new property
   const savePrice = () => dispatch({type: SAVE_INITIAL_PRICE});
 
   // Add one
